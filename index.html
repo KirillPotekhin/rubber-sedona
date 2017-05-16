@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <header class="main-header">
+    <a class="main-logo">
+      <img class="main-logo-img" src="img/main-logo.png" alt="Седона" width="138" height="70">
+    </a>
+    <nav class="main-navigation">
+      <ul class="main-navigation-list">
+        <li class="main-navigation-left">
+          <a class="main-navigation-link" href="#">Информация</a>
+        </li>
+        <li class="main-navigation-left main-navigation-indentation">
+          <a class="main-navigation-link" href="#">Фото и видео</a>
+        </li>
+        <li class="main-navigation-right">
+          <a class="main-navigation-link navigation-link" href="#">Карта штата</a>
+        </li>
+        <li class="main-navigation-right">
+          <a class="main-navigation-link" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-content">
+    <figure class="greeting">
+      <img class="greeting-img" src="img/greeting-img.png" alt="Добро пожаловать в Седону">
+    </figure>
+    <div class="main-cause">
+      <h2 class="main-cause-entry">
+        Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!
+      </h2>
+      <p class="main-cause-item">
+        Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+      </p>
+    </div>
+    <div class="cause cause-background-color">
+      <section class="card">
+        <h2 class="card-title">
+          Настоящий городок
+        </h2>
+        <div class="card-number">
+          &#8212; №1 &#8212;
+        </div>
+        <p class="card-designation">
+          Седона &#8211; не аттракцион для туристов, там течет своя жизнь
+        </p>
+      </section>
+      <figure class="card-img">
+        <img class="real-city" src="img/real-city.jpg" alt="Настоящий городок"
+        width="100%">
+      </figure>
+    </div>
+    <div class="cause-comfort">
+      <div class="cause-comfort-item cause-comfort-house">
+        <h2 class="cause-comfort-title">
+          Жилье
+        </h2>
+        <p class="cause-comfort-offer">
+          Рекомендуем пожить в настоящем мотеле, все как в кино!
+        </p>
+      </div>
+      <div class="cause-comfort-item cause-comfort-eat">
+        <h2 class="cause-comfort-title">
+          Еда
+        </h2>
+        <p class="cause-comfort-offer">
+          Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+        </p>
+      </div>
+      <div class="cause-comfort-item cause-comfort-gift">
+        <h2 class="cause-comfort-title">
+          Сувениры
+        </h2>
+        <p class="cause-comfort-offer">
+          Не только китайского, но и местного производства!
+        </p>
+      </div>
+    </div>
+    <div class="cause cause-background-color">
+      <section class="card card-option">
+        <h2 class="card-title card-title-version">
+          Там есть <br> мост дьявола
+        </h2>
+        <div class="card-number">
+          &#8212; №2 &#8212;
+        </div>
+        <p class="card-designation card-designation-option ">
+          Да, по нему можно пройти! Если конечно вы осмелитесь
+        </p>
+      </section>
+      <div class="card-img right">
+        <img class="bridge" src="img/bridge.jpg" alt="Мост" width="100%">
+      </div>
+    </div>
+    <div class="cause">
+      <section class="card">
+        <h2 class="card-title card-title-color">
+          Небольшая площадь
+        </h2>
+        <div class="card-number">
+          &#8212; №3 &#8212;
+        </div>
+        <p class="card-designation">
+          Все достопримечательности находятся очень близко
+        </p>
+      </section>
+      <section class="card">
+        <h2 class="card-title card-title-color">
+          Красивая дорога
+        </h2>
+        <div class="card-number">
+          &#8212; №4 &#8212;
+        </div>
+        <p class="card-designation">
+          Ехать в Седону из Лас-Вегаса совсем не скучно!
+        </p>
+      </section>
+      <section class="card">
+        <h2 class="card-title card-title-color">
+          Мало туристов
+        </h2>
+        <div class="card-number">
+          &#8212; №5 &#8212;
+        </div>
+        <p class="card-designation">
+          Большинство едет в Гранд Каньон и толпится там
+        </p>
+      </section>
+    </div>
+    <div class="interest">
+      <h2 class="interest-title">
+        Заинтересовались?
+      </h2>
+      <p class="interest-designation">
+        Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне
+      </p>
+      <div><a class="hotel-search" href="form.html">Поиск гостиницы в Седоне</a></div>
+      <div class="hotel-reservation">
+        <form class="hotel-reservation-form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="reservation-block-flex">
+            <label class="reservation-block-title" for="arrival-input">Дата заезда:</label>
+            <div class="reservation-block-date">
+              <input class="reservation-block-item reservation-block-font" id="arrival-input" type="text" name="arrival" value="24 апреля 2017">
+              <span class="calendar">
+                Календарь
+              </span>
+            </div>
+          </div>
+          <div class="reservation-block-flex">
+            <label class="reservation-block-title" for="departure-input">Дата выезда:</label>
+            <div class="reservation-block-date">
+              <input class="reservation-block-item reservation-block-font" id="departure-input" type="text" name="departure" value="4 июля 2017">
+              <span class="calendar">
+                Календарь
+              </span>
+            </div>
+          </div>
+          <div class="reservation-block-flex">
+            <div class="people">
+              <label class="reservation-block-title" for="people-adult-input">Взрослые:</label>
+              <div class="people-number">
+                <span class="number-less">Больше</span>
+                <input class="reservation-block-item reservation-block-font" id="people-adult-input" type="text" name="adult" value="2">
+                <span class="number-more">Меньше</span>
+              </div>
+            </div>
+            <div class="people">
+              <label class="reservation-block-title" for="people-children-input">Дети:</label>
+              <div class="people-number">
+                <span class="number-less">Больше</span>
+                <input class="reservation-block-item reservation-block-font" id="people-children-input" type="text" name="children" value="0">
+                <span class="number-more">Меньше</span>
+              </div>
+            </div>
+          </div>
+          <input class="search-btn btn" type="submit" value="Найти">
+        </form>
+      </div>
+    </div>
+    <div class="map-class" id="map"></div>
+  </main>
+  <footer class="main-footer main-footer-position">
+    <section class="footer-hashtag">
+      #visitsedona
+    </section>
+    <section class="footer-social">
+      <a class="social-btn social-btn-t" href="#">Твиттер</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+    </section>
+    <section class="footer-copyright">
+      website by
+      <a class="logo-master" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    </section>
+  </footer>
+</div>
+<script type="text/javascript" src="js/script.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnHwSo1FD67VVDX1hGzNeucLZFJnf-l8A&callback=initMap"></script>
+</body>
+</html>
