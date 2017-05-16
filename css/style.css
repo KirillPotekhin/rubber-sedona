@@ -4,7 +4,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.5em
+  line-height: 1.5em;
   color: #000000;
   background: #f2f2f2;
 }
@@ -15,7 +15,7 @@ body {
   min-width: 768px;
   margin: 0 auto;
   padding: 0;
-  background: #b21431;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 15px rgba(0,1,1,0.2);
   box-shadow: 0 5px 15px rgba(0,1,1,0.2);
 }
@@ -28,6 +28,7 @@ body {
   position: absolute;
   z-index: 100;
   left: 50%;
+  -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
 
@@ -314,6 +315,7 @@ body {
   z-index: 100;
   top: 100%;
   left: 50%;
+  -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   /*left: 316px;*/
   display: block;
@@ -333,73 +335,73 @@ body {
   animation: shake 0.6s;
 }
 
-/*@-webkit-keyframes bounce {*/
-  /*0%   {*/
-    /*-webkit-transform: translateY(-50%);*/
-    /*transform: translateY(-50%);*/
-  /*}*/
-  /*70%  {*/
-    /*-webkit-transform: translateY(30px);*/
-    /*transform: translateY(30px);*/
-  /*}*/
-  /*90%  {*/
-    /*-webkit-transform: translateY(-10px);*/
-    /*transform: translateY(-10px);*/
-  /*}*/
-  /*100% {*/
-    /*-webkit-transform: translateY(0);*/
-    /*transform: translateY(0);*/
-  /*}*/
-/*}*/
+@-webkit-keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(0) translateX(-50%);
+    transform: translateY(0) translateX(-50%);
+  }
+  70%  {
+    -webkit-transform: translateY(30px) translateX(-50%);
+    transform: translateY(30px) translateX(-50%);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px) translateX(-50%);
+    transform: translateY(-10px) translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(-50%);
+    transform: translateY(0) translateX(-50%);
+  }
+}
 
-/*@keyframes bounce {*/
-  /*0%   {*/
-    /*-webkit-transform: translateY(-50%);*/
-    /*transform: translateY(-50%);*/
-  /*}*/
-  /*70%  {*/
-    /*-webkit-transform: translateY(30px);*/
-    /*transform: translateY(30px);*/
-  /*}*/
-  /*90%  {*/
-    /*-webkit-transform: translateY(-10px);*/
-    /*transform: translateY(-10px);*/
-  /*}*/
-  /*100% {*/
-    /*-webkit-transform: translateY(-50%);*/
-    /*transform: translateY(-50%);*/
-  /*}*/
-/*}*/
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(0) translateX(-50%);
+    transform: translateY(0) translateX(-50%);
+  }
+  70%  {
+    -webkit-transform: translateY(30px) translateX(-50%);
+    transform: translateY(30px) translateX(-50%);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px) translateX(-50%);
+    transform: translateY(-10px) translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(-50%);
+    transform: translateY(0) translateX(-50%);
+  }
+}
 
-/*@-webkit-keyframes shake {*/
-  /*0%, 100% {*/
-    /*-webkit-transform: translateX(0);*/
-    /*transform: translateX(0);*/
-  /*}*/
-  /*10%, 30%, 50%, 70%, 90% {*/
-    /*-webkit-transform: translateX(-10px);*/
-    /*transform: translateX(-10px);*/
-  /*}*/
-  /*20%, 40%, 60%, 80% {*/
-    /*-webkit-transform: translateX(10px);*/
-    /*transform: translateX(10px);*/
-  /*}*/
-/*}*/
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-51%);
+    transform: translateX(-51%);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(-49%);
+    transform: translateX(-49%);
+  }
+}
 
-/*@keyframes shake {*/
-  /*0%, 100% {*/
-    /*-webkit-transform: translateX(0);*/
-    /*transform: translateX(0);*/
-  /*}*/
-  /*10%, 30%, 50%, 70%, 90% {*/
-    /*-webkit-transform: translateX(-10px);*/
-    /*transform: translateX(-10px);*/
-  /*}*/
-  /*20%, 40%, 60%, 80% {*/
-    /*-webkit-transform: translateX(10px);*/
-    /*transform: translateX(10px);*/
-  /*}*/
-/*}*/
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-51%);
+    transform: translateX(-51%);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(-49%);
+    transform: translateX(-49%);
+  }
+}
 
 .hotel-reservation-form {
   width: 568px;
