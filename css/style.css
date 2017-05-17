@@ -85,7 +85,8 @@ body {
   margin: 0;
   padding-top: 76px;
   padding-bottom: 80px;
-  background: url("../img/greeting-elem1.jpg") no-repeat;
+  background: url("../img/greeting-elem1.jpg") no-repeat center 20%;
+  background-size: cover;
 }
 
 .greeting::before {
@@ -95,7 +96,8 @@ body {
   display: block;
   width: 100%;
   height: 57px;
-  background: url("../img/greeting-elem2.png") no-repeat;
+  background: url("../img/greeting-elem2.png") no-repeat center bottom;
+  background-size: contain;
 }
 
 .greeting-img {
@@ -120,7 +122,7 @@ body {
   margin: 0 auto 27px auto;
   font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
+  line-height: 1.24em;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
@@ -129,18 +131,20 @@ body {
 .main-cause-item {
   width: 510px;
   margin: 0 auto;
-  line-height: 26px;
+  line-height: 1.86em;
   text-transform: uppercase;
 }
 
 .card {
   width: 33.33%;
-  padding: 47px 0 59px 0;
+  height: 256px;
+  padding-top: 47px;
+  box-sizing: border-box;
   text-align: center;
 }
 
 .card-option {
-  padding: 46px 0 60px 0;
+  padding-top: 46px;
 }
 
 .card-number {
@@ -148,44 +152,45 @@ body {
 }
 
 .card-designation{
-  width: 278px;
+  width: 68%;
   margin: 0 auto;
   text-transform: uppercase;
 }
 
-.card-designation-option {
-  width: 310px;
+.card-designation1 {
+  width: 71%;
+}
+
+.card-designation2 {
+  width: 58%;
 }
 
 .card-title {
-  width: 158px;
+  width: 60%;
   margin: 0 auto;
   font-size: 21px;
   font-weight: bold;
-  line-height: 21px;
+  line-height: 1em;
   color: #ffffff;
   text-transform: uppercase;
 }
 
-.card-title-version {
-  width: 180px;
-}
-
 .card-img {
-  width: 67.33%;
+  width: 66.67%;
   margin: 0;
 }
 
-.real-city, .bridge {
-  display: block;
-  margin: 0;
-  padding: 0;
+.real-city {
+  background: url("../img/real-city.jpg") no-repeat center center;
+  background-size: cover;
 }
 
-.right {
+.bridge {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
+  background: url("../img/bridge.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .cause {
@@ -207,7 +212,9 @@ body {
 
 .cause-comfort-item {
   width: 33.33%;
-  padding: 56px 0 82px;
+  height: 330px;
+  padding-top: 56px;
+  box-sizing: border-box;
   text-transform: uppercase;
 }
 
@@ -254,7 +261,12 @@ body {
 }
 
 .cause-comfort-offer {
-  width: 302px;
+  width: 63%;
+  margin: 0 auto;
+}
+
+.cause-comfort-offer1 {
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -598,6 +610,7 @@ body {
   width: 100%;
   height: 593px;
   background: url("../img/map.png") no-repeat;
+  background-size: cover;
 }
 
 .main-footer {
